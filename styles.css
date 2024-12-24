@@ -1,0 +1,221 @@
+/* styles.css */
+body {
+  font-family: "Arial", sans-serif; /* Replace with the exact font from the PDF if identified */
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+header h2 {
+  font-size: 20px;
+  margin: 5px 0;
+  color: #555;
+}
+
+header h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #222;
+}
+
+header .intro-text {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.about-section {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about-section .section-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.about-section .section-header h2 {
+  flex: 1;
+  font-size: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.about-section .section-content {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-section .section-content p {
+  flex: 1;
+  max-width: 400px;
+  text-align: justify;
+}
+
+.events-section {
+  background-color: #ececec;
+  padding: 40px 20px;
+}
+
+.events-section h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.event-details {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.date-box {
+  background-color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  max-width: 150px;
+}
+
+.date-box p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.event-description {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 2;
+  max-width: 500px;
+}
+
+.event-description h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.event-description p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+header {
+  padding: 20px;
+}
+header h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+header h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: red;
+  font-weight: bold;
+}
+
+.faculty-advisors {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.advisor-card {
+  width: 150px;
+  height: 100px;
+  background-color: #ccc;
+  border-radius: 8px;
+}
+
+.team-section {
+  margin-top: 30px;
+}
+
+.team-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.team-btn {
+  padding: 10px 20px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.team-btn:hover {
+  background-color: #555;
+}
+
+.team-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  justify-items: center;
+  margin: 0 20px;
+}
+
+.team-card {
+  width: 100px;
+  height: 100px;
+  background-color: #ddd;
+  border-radius: 8px;
+}
+
+.team-card {
+  width: 150px;
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.team-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
