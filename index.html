@@ -1,207 +1,788 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Evolvere Society</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/google.png">
+    <title>Bootstrap 5 Carousel Slider</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown link
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+
+   <!-- NAV BAR  -->
+    <nav class="navbar-unique">
+      <div class="logo-unique">
+        <img src="images\evolverhd.jpg" alt="Logo">
       </div>
+      <div class="hamburger-unique" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links-unique">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#members">Members</a></li>
+        <li><a href="#members">Contact Us</a></li>
+      </ul>
     </nav>
-    <div id="carouselExampleIndicators" class="carousel slide">
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
+
+
+    <!-- SPARE NAVBAR -->
+    <!-- <div class="section0">
+      <div class="nav-bar-1">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+              <img src="https:/t/v/t39.30808-1/301371794_492345942896550_5504939635411307995_n.jpg?stp=dst-jpg_s200x200&_nc_cat=102&ccb=1-7&_nc_sid=f4b9fd&_nc_ohc=CHQjJ52YQBEQ7kNvgGo-Q1c&_nc_zt=24&_nc_ht=scontent.fdbd3-1.fna&_nc_gid=Ar8gScvHQheulzGs6_3HZ5S&oh=00_AYDEBR8Qsb22BwibVVchSBAWu8bgcN0CReMd9QQdN280054" class="logo-strokes" />
+              <a class="navbar-brand" href="#"><img src="images\evolverhd.jpg" alt="edited_strokes.jpeg" border="0" class="strokes-image" /></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                      <li class="nav-item active">
+                          <a class="nav-link about-text" href="#">About<span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link about-text" href="#">Members</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link about-text" href="#">Gallery</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link about-text" href="#">Contact Us</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle about-text" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                              Social Media
+                          </a>
+                          <div class="dropdown-menu">
+                              <a class="dropdown-item about-text" href="#">Instagram</a>
+                              <a class="dropdown-item about-text" href="#">Face Book</a>
+                              <a class="dropdown-item about-text" href="#">Twitter</a>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="data:image/jpeg;base64,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"
-            class="d-block w-100"
-            alt="..."
-          />
-        </div>
-        <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="..." />
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+
+      </div> -->
+      <style>
+        /* Set custom height for the carousel */
+        #carouselExampleIndicators {
+          height: 600px; /* Change this value to set the height */
+        }
+      
+        /* Ensure the inner content fills the carousel height */
+        #carouselExampleIndicators .carousel-inner {
+          height: 100%;
+        }
+      
+        /* Adjust image properties to match the carousel height */
+        #carouselExampleIndicators .carousel-item img {
+          height: 100%; /* Make images fill the carousel height */
+          object-fit: cover; /* Ensure the images cover the area proportionally */
+          width: 100%; /* Maintain full width of images */
+        }
+      </style>
+  <!-- CAROUSEL  -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-    <header>
-      <h1>ABOUT US</h1>
-      <h2>We the People of</h2>
-      <h3>EVOLVERE - SOCIETY OF BIOTECHNOLOGY</h3>
-      <p class="intro-text">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images\bg-slider.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images\bg-slider.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images\bg-slider.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- HEADER ABOUT US -->
+
+
+    <div class="faculty-heading">
+      <h2 style="padding-bottom: 10px;" >About Us</h2>
+      <p class="faculty-caption" style="padding-top: 10px;">We the people of</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+ <!--      <h3>EVOLVERE - SOCIETY OF BIOTECHNOLOGY</h3>
+    <p class="intro-text">
         Evolvere Society is a collaborative community at NIT Durgapur focused on
         Biotechnology and research. We aim to promote innovation, critical
         thinking, and skill-building through projects, events, and
         knowledge-driven activities.
-      </p>
-    </header>
+    </p>
+</header> -->
 
-    <section class="about-section">
-      <div class="section-header">
-        <h2>WHAT WE DO</h2>
-        <h2>OUR VISION</h2>
-      </div>
-      <div class="section-content">
-        <p>
-          Evolvere Society is a collaborative community at NIT Durgapur focused
-          on Biotechnology and research. We aim to promote innovation, critical
-          thinking, and skill-building through projects, events, and
-          knowledge-driven activities.
-        </p>
-        <p>
-          Evolvere Society is a collaborative community at NIT Durgapur focused
-          on Biotechnology and research. We aim to promote innovation, critical
-          thinking, and skill-building through projects, events, and
-          knowledge-driven activities.
-        </p>
-      </div>
-    </section>
 
-    <section class="events-section">
-      <h2>WE CONDUCTED</h2>
-      <div class="event-details">
-        <div class="date-box">
-          <p>FEBRUARY</p>
-          <p>17, 2025</p>
-          <p>12:00 PM</p>
+<!-- WHAT WE DO OUR VISION -->
+
+<!-- <section class="about-section">
+    <div class="section-container">
+        <div class="section-content">
+            <h2>WHAT WE DO</h2>
+            <p>
+                Evolvere Society is a collaborative community at NIT Durgapur focused
+                on Biotechnology and research. We aim to promote innovation, critical
+                thinking, and skill-building through projects, events, and
+                knowledge-driven activities.
+            </p>
         </div>
-        <div class="event-description">
-          <h3>DETAILS</h3>
-          <p>
-            Evolvere Society is a collaborative community at NIT Durgapur
-            focused on Biotechnology and research. We aim to promote innovation,
-            critical thinking, and skill-building through projects, events, and
-            knowledge-driven activities.
+        <div class="vertical-line"></div>
+        <div class="section-content">
+            <h2>OUR VISION</h2>
+            <p>
+                Evolvere Society is a collaborative community at NIT Durgapur focused
+                on Biotechnology and research. We aim to promote innovation, critical
+                thinking, and skill-building through projects, events, and
+                knowledge-driven activities.
+            </p>
+        </div>
+    </div>
+</section> -->
+<!-- HEADER 2 -->
+<header class="evolvere-header">
+  <div class="evolvere-container">
+      <div class="evolvere-header-content">
+          
+          <h3 class="evolvere-society-name">EVOLVERE - SOCIETY OF BIOTECHNOLOGY</h3>
+          <p class="evolvere-intro-text">
+              Evolvere Society is a collaborative community at NIT Durgapur focused on
+              Biotechnology and research. We aim to promote innovation, critical thinking, 
+              and skill-building through projects, events, and knowledge-driven activities.
           </p>
+      </div>
+  </div>
+</header>
+
+<section class="evolvere-about-section">
+  <div class="evolvere-container">
+      <div class="evolvere-section-content">
+          <h2>What We Do</h2>
+          <p>
+              We organize workshops, host conferences, and undertake research-driven projects 
+              to foster a culture of scientific exploration and innovation in the field of biotechnology.
+          </p>
+      </div>
+      <div class="evolvere-section-divider"></div>
+      <div class="evolvere-section-content">
+          <h2>Our Vision</h2>
+          <p>
+              To build a platform that empowers individuals to make meaningful contributions 
+              to biotechnology through collaboration, research, and a commitment to excellence.
+          </p>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- EVENTS -->
+          <!-- <div style="width: 100%; height: 40px; background-color: #ffffff;"></div> -->
+          <section class="events-section">
+            <div class="faculty-heading">
+              <h2>Exciting Events We've Hosted</h2>
+              <p class="faculty-caption">Memorable moments, impactful experiences.</p>
+            </div>
+              <div id="eventCarousel" class="event-carousel carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner" id="carousel-inner"></div>
+                  <button class="carousel-control-prev" id="prevBtn" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" id="nextBtn" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                  </button>
+              </div>
+          </section>
+
+   
+          <div style="width: 100%; height: 100px; background-color: #ffffff;"></div>
+
+
+<!-- ANIMATION  -->
+<div class="slider">
+   
+
+
+  <div class="main">
+      <h1 class="h13">NIT DURGAPUR: <div class="roller">
+        <span id="rolltext">EMPOWERING<br/>
+        INNOVATION<br/>
+        THROUGH<br/>
+        <span id="spare-time">TECHNOLOGY</span><br/>
+        </div>
+        </h13>
+        
+      </div>
+    </div>
+    <div style="width: 100%; height: 60px; background-color: #ffffff;"></div>
+
+<!-- FACULTY -->
+          <div class="faculty-heading">
+            <h2>Faculty Advisors</h2>
+            <p class="faculty-caption">Meet our esteemed faculty advisors who guide and mentor us.</p>
+          </div>
+          <div class="faculty-row">
+            <div class="faculty-card">
+              <img src="https://nitdgp.ac.in/uploads/2740f99ecfe8440ffab1d2ba7af9a2ba.png" alt="Faculty 1" class="faculty-img">
+              <div class="faculty-content">
+                <h3>Subhankar Roy Barman</h3>
+                <p>Associate Professor</p>
+                <p>Department of Biotechnology</p>
+                <p>Joined the Institute in 2010</p>
+              </div>
+            </div>
+
+      <div class="faculty-card">
+        <img src="https://nitdgp.ac.in/uploads/2740f99ecfe8440ffab1d2ba7af9a2ba.png" alt="Faculty 2" class="faculty-img">
+        <div class="faculty-content">
+          <h3>Subhankar Roy Barman</h3>
+          <p>Associate Professor</p>
+          <p>Department of Chemistry</p>
+          <p>Joined the Institute in 2010</p>
         </div>
       </div>
-    </section>
+          </div>
 
-    <header>
-      <h2>Our <span class="highlight">Faculty</span> Advisors</h2>
-      <div class="faculty-advisors">
-        <div class="advisor-card"></div>
-        <div class="advisor-card"></div>
-      </div>
-    </header>
 
-    <section class="team-section">
-      <h2>Our <span class="highlight">Amazing</span> - Team</h2>
-      <div class="team-buttons">
-        <button class="team-btn" onclick="showTeam('alumni')">Alumni</button>
-        <button class="team-btn" onclick="showTeam('fourthYears')">
-          Fourth Years
-        </button>
-        <button class="team-btn" onclick="showTeam('thirdYears')">
-          Third Years
-        </button>
-        <button class="team-btn" onclick="showTeam('secondYears')">
-          Second Years
-        </button>
+<!-- TEAM -->
+    <div style="width: 100%; height: 80px; background-color: #ffffff;"></div>
+    <main>
+      <div class="faculty-heading">
+        <h2>Meet Our Dedicated Team</h2>
+        <p class="faculty-caption">A group of passionate students committed to driving the success of our club.</p>
       </div>
-      <div id="team-gallery" class="team-gallery">
-        <!-- Dynamic team cards will appear here -->
+      <!-- Filter Buttons -->
+      <div id="filter-buttons">
+        <button class="filter-button active" data-category="alumni">Alumni</button>
+        <button class="filter-button" data-category="fourth-year">Fourth Years</button>
+        <button class="filter-button" data-category="third-year">Third Years</button>
+        <button class="filter-button" data-category="second-year">Second Years</button>
       </div>
-    </section>
+  
+      <!-- Card Container -->
+      <div id="unique-card-container">
+        <!-- IT Fellows -->
+        <div class="unique-card active" data-category="alumni">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">John Doe</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card active" data-category="alumni">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">Alice Smith</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card active" data-category="alumni">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">John Doe</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card active" data-category="alumni">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">Alice Smith</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card active" data-category="alumni">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">John Doe</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card active" data-category="alumni">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">Alice Smith</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card " data-category="fourth-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">John Doe</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card " data-category="fourth-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">John Doe</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card " data-category="fourth-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">John Doe</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card " data-category="fourth-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">John Doe</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card " data-category="fourth-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">John Doe</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card " data-category="fourth-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">John Doe</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card " data-category="fourth-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">John Doe</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card " data-category="fourth-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">John Doe</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card " data-category="fourth-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">John Doe</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card " data-category="fourth-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">John Doe</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card " data-category="fourth-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">John Doe</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card " data-category="fourth-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">John Doe</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card " data-category="fourth-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">John Doe</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card " data-category="third-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">Alice Smith</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card " data-category="third-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">Alice Smith</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card " data-category="third-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">Alice Smith</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card " data-category="third-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">Alice Smith</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card " data-category="third-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">Alice Smith</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card " data-category="third-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">Alice Smith</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card " data-category="third-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">Alice Smith</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card " data-category="third-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">Alice Smith</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card " data-category="third-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">Alice Smith</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card " data-category="third-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">Alice Smith</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card" data-category="second-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">John Doe</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card" data-category="second-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">John Doe</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card" data-category="second-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">John Doe</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card" data-category="second-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">John Doe</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card" data-category="second-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">John Doe</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card" data-category="second-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">John Doe</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card" data-category="second-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">John Doe</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card" data-category="second-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">John Doe</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card" data-category="second-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">John Doe</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        <div class="unique-card" data-category="second-year">
+          <img src="images\sony.png" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">John Doe</h3>
+            <p class="unique-card-text">IT Fellow</p>
+          </div>
+        </div>
+        
+  
+        <!-- Operations Fellows -->
+        <div class="unique-card" data-category="operations-fellow">
+          <img src="https://via.placeholder.com/150" alt="Profile Image" class="unique-card-image">
+          <div class="unique-card-content">
+            <h3 class="unique-card-title">Bob Johnson</h3>
+            <p class="unique-card-text">Operations Fellow</p>
+          </div>
+        </div>
+  
+        <!-- Add more cards for different categories -->
+      </div>
+    </main>
 
+
+<!-- CONTACT US -->
+    <div style="width: 100%; height: 100px; background-color: #ffffff;"></div>
+    <div class="contact">
+      <div class="contact-container">
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          class="contact-left"
+        >
+          <div class="contact-left-title">
+            <h2>Get In Touch</h2>
+            <hr />
+          </div>
+          <input
+            type="hidden"
+            name="access_key"
+            value="b71496b7-eea1-433a-b1ab-1b5d5160cc4c"
+          />
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            class="contact-inputs"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            class="contact-inputs"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            class="contact-inputs"
+            required
+          ></textarea>
+          <button type="submit">
+            Submit <img src="assets/arrow_icon.png" alt="" />
+          </button>
+        </form>
+        <div class="contact-right">
+          <img src="assets/right_img.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+
+<!-- IMAGE -->
+    <div class="full-width-image">
+      <img src="images/footer-image.png" alt="Campus View" />
+    </div>
+
+
+<!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="footer-col">
+                  <h4>Our Institute</h4>
+                  <ul>
+                      <li><a href="#">Academic Calendar</a></li>
+                      <li><a href="#">our services</a></li>
+                      <li><a href="#">privacy policy</a></li>
+                      <li><a href="#">affiliate program</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>get help</h4>
+                  <ul>
+                      <li><a href="#">Director</a></li>
+                      <li><a href="#">Dean</a></li>
+                      <li><a href="#">HOD</a></li>
+                      <li><a href="#">Faculty</a></a></li>
+                      <li><a href="#">Treasurers</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>Useful-Links</h4>
+                  <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Events</a></li>
+                      <li><a href="#">Team</a></li>
+                      <li><a href="#">Members</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>follow us</h4>
+                  <div class="social-links">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+    </footer>
+
+
+<!-- SCRIPTS -->
+   <script>
+    const buttons = document.querySelectorAll('.filter-button');
+    const cards = document.querySelectorAll('.unique-card');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Remove 'active' class from all buttons
+        buttons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        // Get the category from the button
+        const category = button.dataset.category;
+
+        // Show/Hide cards based on the category
+        cards.forEach(card => {
+          if (card.dataset.category === category) {
+            card.classList.add('active');
+          } else {
+            card.classList.remove('active');
+          }
+        });
+      });
+    });
+  </script>
     <script src="script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function toggleMenu() {
+        const nav = document.querySelector('.nav-links-unique');
+        nav.classList.toggle('active-unique');
+      }
+    </script>
   </body>
 </html>
